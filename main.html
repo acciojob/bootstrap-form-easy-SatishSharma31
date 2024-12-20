@@ -14,7 +14,7 @@
           <form action="/">
             <div class="first-row">
               <div class="form-group">
-                <label for="first-name-input">First Name</label><br />
+                <label class="form-label" for="first-name-input">First Name</label><br />
                 <input
                   required
                   type="text"
@@ -23,7 +23,7 @@
                 />
               </div>
               <div class="form-group">
-                <label for="last-name-input">Last Name</label><br />
+                <label class="form-label" for="last-name-input">Last Name</label><br />
                 <input
                   required
                   type="text"
@@ -32,16 +32,16 @@
                 />
               </div>
               <div class="form-group">
-                <label for="email-input">Email Adress</label><br />
+                <label class="form-label" for="email-input">Email Adress</label><br />
                 <input
-                  type="text"
+                  type="email"
                   id="email-input"
                   required
                   placeholder="xyz@abc.com"
                 />
               </div>
               <div class="form-group custom">
-                <label for="college-input">Collage</label><br />
+                <label class="form-label" for="college-input">Collage</label><br />
                 <input
                   required
                   type="text"
@@ -50,8 +50,8 @@
                 />
               </div>
               <div class="form-group">
-                <label for="graduation-year-input">Graduation Year</label><br />
-                <select required name="Graduation Year" id="graduation-year-input">
+                <label class="form-label" for="grad-year-select">Graduation Year</label><br />
+                <select required name="Graduation Year" id="grad-year-select">
                   <option value=""></option>
                   <option value="2020">2020</option>
                   <option value="2021">2021</option>
@@ -60,7 +60,7 @@
                 </select>
               </div>
               <div class="form-group custom2">
-                <label for="roll-no-input">Roll Number</label><br />
+                <label class="form-label" for="roll-no-input">Roll Number</label><br />
                 <input
                   type="number"
                   id="roll-no-input"
@@ -76,7 +76,7 @@
                 required
                 placeholder=""
               />
-              <label for="conditions-checkbox"
+              <label class="form-label" for="conditions-checkbox"
                 >Agree to terms & conditions <br />
                 you must agree before submitting. </label
               ><br />
