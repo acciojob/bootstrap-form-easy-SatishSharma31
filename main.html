@@ -1,16 +1,90 @@
 <!DOCTYPE html>
-
-<html>
-
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internship Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <main>
+        <h2>Internship Form</h2>
+        <div class="formSec">
+          <form action="/">
+            <div class="first-row">
+              <div class="form-group">
+                <label for="first-name-input">First Name</label><br />
+                <input
+                  required
+                  type="text"
+                  id="first-name-input"
+                  placeholder="First Name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="last-name-input">Last Name</label><br />
+                <input
+                  required
+                  type="text"
+                  id="last-name-input"
+                  placeholder="Last Name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email-input">Email Adress</label><br />
+                <input
+                  type="text"
+                  id="email-input"
+                  required
+                  placeholder="xyz@abc.com"
+                />
+              </div>
+              <div class="form-group custom">
+                <label for="college-input">Collage</label><br />
+                <input
+                  required
+                  type="text"
+                  id="college-input"
+                  placeholder="College"
+                />
+              </div>
+              <div class="form-group">
+                <label for="graduation-year-input">Graduation Year</label><br />
+                <select required name="Graduation Year" id="graduation-year-input">
+                  <option value=""></option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                </select>
+              </div>
+              <div class="form-group custom2">
+                <label for="roll-no-input">Roll Number</label><br />
+                <input
+                  type="number"
+                  id="roll-no-input"
+                  required
+                  placeholder="Roll No"
+                />
+              </div>
+            </div>
+            <div class="form-group2">
+              <input
+                type="checkbox"
+                id="conditions-checkbox"
+                required
+                placeholder=""
+              />
+              <label for="conditions-checkbox"
+                >Agree to terms & conditions <br />
+                you must agree before submitting. </label
+              ><br />
+              <button>Submit Form</button>
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
