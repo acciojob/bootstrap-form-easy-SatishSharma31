@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Internship Form</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <div class="main-container">
@@ -19,67 +25,91 @@
                 ><br />
                 <input
                   required
-                  class="form-control"
+                  class="form-control is-invalid"
                   type="text"
                   id="first-name-input"
                   placeholder="First Name"
                 />
+                <div class="invalid-feedback">
+                  First Name Required!
+                  </div>
               </div>
               <div class="form-group">
-                <label class="form-label" for="last-name-input">Last Name</label
+                <label class="form-label is-invalid" for="last-name-input">Last Name</label
                 ><br />
                 <input
                   required
-                  class="form-control"
+                  class="form-control is-invalid"
                   type="text"
                   id="last-name-input"
                   placeholder="Last Name"
                 />
+                <div class="invalid-feedback">
+                  Last Name Required!
+                  </div>
               </div>
               <div class="form-group">
-                <label class="form-label" for="email-input">Email Address</label
+                <label class="form-label is-invalid" for="email-input">Email Address</label
                 ><br />
                 <input
                   type="email"
-                  class="form-control"
+                  class="form-control is-invalid"
                   id="email-input"
                   required
                   placeholder="xyz@abc.com"
                 />
+                <div class="invalid-feedback">
+                  Email Required!
+                  </div>
               </div>
               <div class="form-group custom">
                 <label class="form-label" for="college-input">College</label
                 ><br />
                 <input
                   required
-                  class="form-control"
+                  class="form-control is-invalid"
                   type="text"
                   id="college-input"
                   placeholder="College"
                 />
+                <div class="invalid-feedback">
+                  Please provide a valid college.
+                  </div>
               </div>
               <div class="form-group">
-                <label class="form-label" for="grad-year-select"
+                <label class="form-label is-invalid" for="grad-year-select"
                   >Graduation Year</label
                 ><br />
-                <select required class="form-select" name="Graduation Year" id="grad-year-select">
+                <select
+                  required
+                  class="form-select is-invalid"
+                  name="Graduation Year"
+                  id="grad-year-select"
+                >
+                
                   <option value=""></option>
                   <option value="2020">2020</option>
                   <option value="2021">2021</option>
                   <option value="2022">2022</option>
                   <option value="2023">2023</option>
                 </select>
+                <div class="invalid-feedback">
+                  Please select a valid Graduation Year.
+                  </div>
               </div>
               <div class="form-group custom2">
                 <label class="form-label" for="roll-no-input">Roll No.</label
                 ><br />
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control is-invalid"
                   id="roll-no-input"
                   required
                   placeholder="Roll No"
                 />
+                <div class="invalid-feedback">
+                  Please provide a valid Roll No.
+                  </div>
               </div>
             </div>
             <div class="form-group2">
@@ -94,11 +124,17 @@
                 >Agree to terms and conditions <br />
                 you must agree before submitting. </label
               ><br />
+              <div class="invalid-feedback">
+                You must agree before submitting.
+                </div>
               <button>Submit Form</button>
             </div>
           </form>
         </div>
       </main>
     </div>
+    <!-- the entire body must be written by student -->
+    <script type="text/javascript" src="./script.js">
+    </script>
   </body>
 </html>
